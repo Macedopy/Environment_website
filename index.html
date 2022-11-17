@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<script src="website.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <script type="text/javascript" src="website.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="main-login" id="login">
+        <ion-icon class="mobile-icon" name="apps-outline" onclick="showMenu()"></ion-icon>
+        <div class="left-login">
+            <h1>Entre e fique por dentro das <span>novidades!</span></h1>
+            <img class= "tree_animation" src="../files/tree_animation.svg" alt="tree_animation">
+    </div>
+
+        <div class="right-login">
+
+    <div class="navegation-link-div">
+        <nav>
+            <div class="navegation-link">
+                <ion-icon class="mobile-icon" name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <a href="#login" onclick="Scrolltologin()">
+                        <li>
+                        
+                            <span class="inicio-icon">
+                            <ion-icon name="cloud-upload-outline"></ion-icon>
+                            </span>
+                            <label class="inicio-icon">LOGIN</label>
+                        </li>
+                    </a>
+
+                    <a href="#inicio" onclick="Scrolltoinicio" id="inicio-button">
+                        <li>
+                            <span class="inicio-icon">
+                            <ion-icon name="cube-outline"></ion-icon>
+                            </span>
+                            <label class="inicio-icon">INÍCIO</label>
+                        </li>
+                    </a>
+
+                    <a href="#sobre" onclick="Scrolltosobre">
+                        <li>
+                            <span class="inicio-icon">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <label class="inicio-icon">SOBRE</label>
+                        </li>
+                    </a>
+
+                    <a href="#contato" onclick="Scrolltocontato" id="contato-element">
+                        <li>
+                            <span class="inicio-icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <label class="inicio-icon">CONTATO</label>
+                        </li>
+                    </a>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>            
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                </div>
+                <button class="btn-login">Login</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="inicio" id="inicio">
+        <div>
+            <h1 id="inicio-title-text">Por que precisamos <br>cuidar do nosso meio ambiente?</br></h1>
+        </div>
+        </div>
+        <div id="iniciotext-head">
+            <div class="iniciotext-left-head">
+                <img src="../files/imagem_planta.jpg">
+                <div id="iniciotext-left">
+                    <p>
+                        Preservar o meio ambiente é fundamental, afinal, é nele onde estão os recursos naturais necessários para a nossa sobrevivência, como água, alimentos e matérias-primas. Sem esses recursos, todas as formas de vida do planeta poderão acabar.
+                    </p>
+                </div>
+            </div>
+            <div class="iniciotext-right-head">
+                <img src="../files/meio_ambiente.jpg">
+                <div id="iniciotext-right">
+                    <p>
+                        Proteger o meio ambiente é tarefa para todos nós, independentemente de nossa idade. Ajudar é fundamental para que as próximas gerações possam usufruir de tudo o que nosso planeta oferece, tendo acesso a um ar puro, água limpa e à variedade de espécies que aqui vivem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p id="invitation-text">
+            Fique por dentro de nossos serviços<br>
+            que ajudam o meio ambiente!
+        </p>
+        <div id="remove-shadow" class="images-change">
+            <img class="bottom" src="../files/foto_funcionarios.jpg">
+            <img class="top" src="../files/meio_ambiente_2.jpg">
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="sobre-title">
+            <img id="leaf" src="../files/leaf.png">
+            <h1>
+                Sobre nós
+            </h1>
+        </div>
+        <div class="office">
+            <p class="sobre-text">
+                Nós somos uma organização que apoia o meio ambiente, com nossos clientes inscritos podemos ter recursos e o suporte necessários para manter nosso projeto 
+            </p>
+            <div class="office-img-div">
+                <img class="office-img" src="../files/escritório.jpg">
+            </div>
+        </div>
+        </div>
+        <div class="contato" id="contato">
+            <h1>Contatos</h1>
+            <div class="contato-elements">
+                <div class="contato-elements-organize">
+                    <p id="contato-element-1">
+                        Entre em contato conosco através de nossos canais de comunicação
+                    </p>
+                    <a href="https://www.google.com.br/maps/place/Cl%C3%A1udia,+MT,+78540-000/@-11.5068351,-54.8873785,15z/data=!3m1!4b1!4m5!3m4!1s0x93085c24b5761be7:0x84aeab22a06ee74b!8m2!3d-11.5066033!4d-54.8794556" id="contato-element-2">
+                        <ion-icon id="home-icon-filled" name="home"></ion-icon>
+                        <ion-icon id="home-icon" name="home-outline"></ion-icon>
+                        <p>
+                            <span>Endereço:</span> Campinhas, Jardim Passarinho, Rua água 554
+                        </p>
+                    </a>
+                    <a href="https://wa.me/55999998888" id="contato-element-3">
+                        <ion-icon id="whatsaap-icon" name="logo-whatsapp"></ion-icon>
+                        <p>
+                            <span>Whatsaap:</span> +55 (99) 99999-8888
+                        </p>
+                    </a>
+                    <a href="mailto:emailsite@provedor.com.br" id="contato-element-4">
+                        <ion-icon id="email-open" name="mail-open-outline"></ion-icon>
+                        <ion-icon id="email-closed" name="mail-outline"></ion-icon>
+                        <p>
+                            <span> E-mail:</span> emailsite@provedor.com.br
+                        </p>
+                    </a>
+                </div>
+            <div class="contato-send">
+                <input type="email" name="email" placeholder="E-mail"></textarea>
+                <input name="title" placeholder="Título"></textarea>
+                <textarea id="subject" type="text" name="subject" placeholder="Assunto"></textarea>
+                <button class="enviar-button">Enviar
+                <ion-icon id="enviar-button-icon" name="chevron-forward-outline"></ion-icon></button>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

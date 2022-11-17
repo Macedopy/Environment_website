@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@font-face { font-family: rubik;
+          src: url('../files/font/Rubik-VariableFont_wght.ttf');}
+
+@font-face { font-family: dancing-script;
+          src: url('../files/font/DancingScript-VariableFont_wght.ttf');}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    font-family: rubik;
+    background: #130920;
+}
+
+.main-login{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #130920;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    margin-top: 10%;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3vw;
+    font-weight: 600;
+    color: #49e463;
+}
+
+.tree_animation{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    z-index: 2;
+}
+
+.left-login > h1{
+    font-size: 3vw;
+    color: #49e463;
+    margin: 0;
+    margin-top: 20%;
+}
+
+span:hover{
+    transition: 1s;
+    color:white;
+}
+
+.right-login{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation-link-div{
+    background: #35214f;
+    width: 100%;
+    height: 7%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    text-align: right;
+}
+
+.navegation-link ul{
+    margin: 0;
+    width: 100%;
+}
+    
+.navegation-link ul li{
+    display: inline-block;
+    padding: 1vw;
+    transition: 0.2s;
+    margin-right: 75px;
+}
+
+.navegation-link ul li a{
+    align-items: center;
+    font-size: 2vw;
+    text-decoration: none;
+    color:#49e463;
+}
+
+.inicio-icon{
+    font-size: 1.6vw;
+    color: #49e463;
+    cursor: pointer;
+}
+
+#switch-shadow{
+    position: absolute;
+    visibility: hidden;
+    margin-left: -9999px;
+}
+
+#switch-shadow + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.navegation-link ul li:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 30px 25px #49e463;
+    border-radius: 10px;
+}
+
+.card-login{
+    width: 60%;
+    height: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vw;
+    background: #35214f;
+    border-width:20px;
+    border-style: flat;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0px 20px 40px #1d1b1b;
+    border-color: #573781;
+    margin: 0;
+}
+
+.card-login >h1{
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #49e463;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1vw 0vw;
+
+}
+
+.textfield > input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1.5vh;
+    font-size: 100%;
+    background: #473262;
+    color: white;
+    box-shadow: 0px 10px 20px #1d1b1b;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.textfield > label{
+    color: #c3dcc1;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #c3dcc1;
+}
+
+.textfield >input:active{
+    transition: 0.1s;
+    transform: translateY(-5px);
+}
+
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 30px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    color: #141a17;
+    background: #473262;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-login:hover{
+    letter-spacing: 0.15vw;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+    background-image: linear-gradient(90deg, #49e463, #4ab09f);
+    box-shadow: 0px 10px 20px #49e463;
+    color: #444645;
+}
+
+.btn-login:active{
+    transform: translateY(-5px);
+    transition: 0.1s;
+}
+
+/* -------------- Sessão Início -------------- */
+
+inicio *{
+  padding:0px;
+  margin:0px;
+}
+
+.inicio{
+    background: #2b1943;
+    text-align: center;
+    border-top: 0.7rem solid #482d6c;
+}
+
+.inicio h1{
+    font-family: dancing-script;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #49e463;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 90%;
+    }
+}
+
+.mobile-icon{
+    display: none;
+    top: 0;
+    right: 0;
+    margin: 8%;
+    position: absolute;
+}
+
+.inicio #iniciotext-head{
+    margin-left: 5%;
+    display: flex;
+    font-size: 2vw;
+    color: #b2f5bd;
+    height: auto;
+    text-align: left;
+}
+
+
+.inicio #iniciotext-left{
+    border-right: 1vw solid #49e463;
+    padding: 2%;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:80%;
+    height: 50%;
+    margin: 0;
+    margin-left: 9%;
+}
+
+.inicio .iniciotext-left-head img{
+    width:40vw;
+}
+
+.inicio .iniciotext-right-head img{
+    width:40vw;
+}
+
+.inicio #iniciotext-right{
+    border-left: 1vw solid #49e463;
+    padding: 2%;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:80%;
+    height: 50%;
+    right: 0px;
+    margin:0;
+    margin-left: 4%;
+}
+
+.inicio #invitation-text{
+    margin:0;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #49e463;
+    margin-top: 20%;
+}
+
+.inicio img{
+    margin: 5%;
+    height: auto;
+    width: 40%;
+    animation: imgshake 3s infinite;
+    border-radius: 10%;
+    box-shadow: 0px 10px 30px #482d6c;
+    transition: 1s;
+}
+
+.inicio #iniciotext-head img:hover{
+    transition: 1s;
+    box-shadow: 0px 10px 30px #49e463;
+    border-radius: 0%;
+}
+
+@keyframes imgshake{
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-5px)}
+    70% {transform: translateY(3px)}
+    100% {transform: translateY(0px)}
+}
+
+.images-change{
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.images-change img{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    margin-top: 2%;
+    right: 30%;
+    left: 30%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#remove-shadow img{
+    box-shadow: 0px 10px 30px #482d6c;
+}
+
+.images-change .top:hover{
+    opacity:0;
+}
+
+/* -------------- Sessão Sobre -------------- */
+
+.sobre{
+    background-color: #130920;
+    padding: 0px;
+    border-top: 0.5rem solid #ECA413;
+}
+
+.sobre-title{
+    font-family: dancing-script;
+    width: 100vw;
+    height: 40%;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+}
+
+#leaf{
+    width: 2vw;
+    height: auto;
+    margin-right: 2%;
+}
+
+.sobre-title h1{
+    margin-left: 7%;
+    width: 100%;
+    margin: 0;
+    color: #ECA413;
+    font-size: 2.2vw;
+}
+
+.images-change img:hover{
+    transition: opacity 1s;
+}
+
+.office{
+    display: flex;
+}
+
+.office-img{
+    width: 60vw;
+    height: auto;
+    margin: 0;
+    margin-top: 25vh;
+    margin-right: 6%;
+    box-shadow: 0px 10px 30px #ECA413;
+    transition: 1s;
+}
+
+.sobre-text{
+    border-left: 0.5vw solid #ECA413;
+    padding: 2%;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: 35vh;
+    margin-left: 3%;
+    height: auto;
+    font-size: 2vw;
+    color: #ECA413;
+}
+
+.office-img:hover{
+    box-shadow: 0px 10px 60px #986c16;
+}
+
+.contato{
+    width: 100%;
+    border-top: 0.5rem solid #482d6c;
+    border-bottom: 0.5rem solid #482d6c;
+    margin-top: 20vh;
+    background-color: #2b1943;
+}
+
+.contato h1{
+    display:flex;
+    justify-content:center;
+    color: #482d6c;
+    font-weight: 800;
+    font-size: 5vw;
+    margin: 0;
+    font-family: dancing-script;
+    margin-top: 2vh;
+}
+
+.contato-elements{
+    display: flex;
+    left: 0;
+}
+
+.contato-elements p{
+    margin-left: 3vw;
+    color: #633f92;
+    font-weight: 800;
+    font-family: dancing-script;
+    font-size: 1.6vw;
+}
+
+.contato-elements span{
+    color: #49e463;
+    font-size: 1.3vw;
+    font-family: rubik;
+}
+
+.contato-elements-organize{
+    margin-top: 15vh;
+    width: 50vw;
+}
+
+.contato-send{
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+    margin-left: 25vw;
+    margin-right: 2vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-send textarea, .contato-send input{
+    border: 0;
+    border-bottom: 0.3vh solid #633f92;
+    color: white;
+    font-family: rubik;
+    font-size: 1.5vw;
+    background: #2b1943;
+    margin:0;
+    width: 40vw;
+    height: 6vh;
+    margin-top: 4vh;
+    outline: none;
+    transition: 0.3s;
+}
+
+#subject{
+    overflow-wrap: break-word;
+    height:20vh;
+}
+
+.contato-send textarea::placeholder, .contato-send input::placeholder{
+    font-family: dancing-script;
+}
+
+.contato-send textarea:hover,.contato-send input:hover{
+    background: #3a2258;
+    border-bottom-color: #49e463;
+}
+
+.enviar-button{
+    left: 30%;
+    right: 0;
+    position: relative;
+    width: 15vw;
+    height: auto;
+    padding: 1vw 0px;
+    margin: 2vmax;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    color: #141a17;
+    background: #473262;
+    cursor: pointer;
+    font-family: dancing-script;
+    transition: 0.8s;
+}
+
+.enviar-button:hover{
+    transform: translateY(-10px);
+    letter-spacing: 0.1vw;
+    background-image: linear-gradient(90deg, #49e463, #4ab09f);
+    box-shadow: 0px 10px 20px #49e463;
+    color: #444645;
+}
+
+#enviar-button-icon{
+    opacity: 0;
+}
+
+.enviar-button:hover #enviar-button-icon{
+    opacity: 1;
+}
+
+#contato-element-1{
+    font-family: dancing-script;
+    color: #633f92;
+    font-weight: 800;
+    font-size: 3vw;
+}
+
+#contato-element-2, #contato-element-3, #contato-element-4{
+    text-decoration: none;
+    color: #49e463;
+    font-weight: 800;
+    font-size: 1.3vw;
+}
+
+#contato-element-2:hover #home-icon{
+    opacity: 0;
+}
+
+#contato-element-2:hover #home-icon-filled{
+    opacity: 1;
+}
+
+#whatsaap-icon{
+    margin-left: 0.8vw;
+    position: absolute;
+}
+
+#email-closed, #home-icon{
+    opacity: 1;
+    margin-left: 0.8vw;
+    position: absolute;
+    color: #49e463;
+    font-size: 1.3vw;
+    transition: 0.5s;
+}
+
+#email-open, #home-icon-filled{
+    opacity: 0;
+    margin-left: 0.8vw;
+    position: absolute;
+    color: #49e463;
+    font-size: 1.3vw;
+    transition: 0.5s;
+}
+
+#contato-element-4:hover #email-closed{
+    opacity: 0;
+}
+
+#contato-element-4:hover #email-open{
+    opacity: 1;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .main-login{
+    flex-direction: column;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login > h1{
+        margin-left: 25%;
+    }
+    .left-login img{
+        display: flex;
+        margin-left: 25%;
+        width: 50vw;
+    }
+    .card-login{
+        width: 60%;
+        height: 40vh;
+        margin-bottom: 10%;
+    }
+
+    .card-login h1{
+        font-size: 4vw;
+    }
+
+    .textfield > input{
+    width: 50vw;
+    height: 4vh;
+    padding: 0;
+    font-size: 80%;
+    }
+
+    .textfield > label{
+        font-size: 3vw;
+    }
+    
+    .btn-login{
+    width: 35vw;
+    height: 3rem;
+    font-size: 3vw;
+    display: inline-block;
+    text-align: center;
+    margin: 7%;
+    }
+
+    .navegation-link-div{
+        position: absolute;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        transition: 0.4s;
+        z-index: 0;
+    }
+    .navegation-link-div{
+        border-bottom-left-radius: 120px;
+        transition: 2s;
+    }
+
+    .tree_animation{z-index: 0;}
+
+
+    .mobile-icon{
+        display: block;
+        font-size: 40px;
+        color: #49e463;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        margin: 10;
+    }
+
+    .showicon{
+        position:absolute;
+        right: 0;
+    }
+    .navegation-link ul{
+        padding: 3vw;
+        margin-top: 60%;
+    }
+
+    .navegation-link ul li{
+        margin-top: 8vh;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .navegation-link label, .navegation-link span{
+        font-size: 1.3rem;
+    }
+
+    .inicio{
+        display:inline-block;
+    }
+
+    .inicio #iniciotext-head{
+    flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .inicio #iniciotext-head img{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .inicio #iniciotext-head p{
+        font-size: 5vw;
+    }
+
+    .inicio #iniciotext-left{
+        width: 90%;
+         margin-left: 6%;   
+    }
+
+    .inicio #iniciotext-right{
+        width: 90%;
+         margin-left: 6%;   
+    }
+
+    #inicio-title-text{
+        font-size: 5vw;
+    }
+
+    .inicio #invitation-text{
+        font-size: 5vw;
+        margin-bottom: 5%;
+    }
+
+    .images-change img{
+    width: 80vw;
+    height: auto;
+    left:10%;
+    right:10%;
+    }
+
+    .office{
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+
+    .office-img, .sobre-text{
+        font-size: 5vw;
+        margin: 0;
+        margin-top: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+
+    .office-img-div{
+        display: flex;
+        flex-direction: center;
+    }
+
+    .sobre-text{
+    border-left: 0;
+    border-bottom: 0.5vh solid #ECA413;
+    }
+    
+    .sobre-title h1{
+        font-size: 5vw;
+    }
+
+    .contato-send{
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contato-send textarea, .contato-send input{
+    font-size: 8vw;
+    width: 80vw;
+    height: 6vh;
+    margin-top: 4vh;
+    outline: none;
+    transition: 0.3s;
+    }
+
+    .enviar-button{
+    left: 20%;
+    width: 28vw;
+    height: auto;
+    font-size: 5vw;
+    }
+
+    .enviar-button:active{
+    transform: translateY(-5px);
+    transition: 0.1ms;
+    }
+
+    .contato-elements{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contato-elements p{
+    margin-left: 10vw;
+    color: #633f92;
+    font-weight: 800;
+    font-family: dancing-script;
+    }
+
+    .contato-elements-organize p, .contato-elements-organize span, .contato-elements-organize a{
+        font-size: 5vw;
+    }
+
+    .contato-elements-organize{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    #home-icon, #whatsaap-icon, #email-open, #email-closed{
+        font-size: 1rem;
+    }
+
+    .contato h1{font-size: 3rem;}
+    
+    #contato-element-1{
+        font-size: 1.5rem;
+        margin-top: 8vh;
+        margin-bottom: 13vh;
+    }
