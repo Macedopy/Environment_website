@@ -8,7 +8,7 @@ Login:
     <img src=https://media.giphy.com/media/oDzMZjH7G5RLI7G6Q4/giphy.gif>
 </div>
 
-  Inicio:
+  Início:
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
     <img src=https://media.giphy.com/media/eebjTk095O2XuB7wBt/giphy.gif>
@@ -25,7 +25,12 @@ Contatos:
   <a href="https://giphy.com/channel/Brumacedo">
     <img src=https://media.giphy.com/media/8RUv1ooHjqiyjAbk8W/giphy.gif>
 </div>
-  
+ 
+Funcionalities:
+<div>
+  <a href="https://giphy.com/channel/Brumacedo">
+    <img src=https://media.giphy.com/media/dOvXHage1RQZ4eI7Ta/giphy.gif>
+</div>
   
 Mobile version:
 <div>
