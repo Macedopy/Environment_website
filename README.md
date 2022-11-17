@@ -5,5 +5,5 @@
 Login:
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
-    <img src=https://giphy.com/gifs/oDzMZjH7G5RLI7G6Q4.gif>
+    <img src=https://media.giphy.com/media/oDzMZjH7G5RLI7G6Q4/giphy.gif>
 </div>
