@@ -11,11 +11,23 @@
 
 
 Login:
+###PORTUGUESE:
+A seção de login serve para o cadastro de clientes em nosso site.
+
+###ENGLISH:
+The login section serves to register customers on our website.
+
 <div>
    <img src=https://media.giphy.com/media/oDzMZjH7G5RLI7G6Q4/giphy.gif>
 </div>
 
-  Início:
+Início:
+###PORTUGUESE:
+A seção de início tem a finalidade de apresentar alguns projetos desenvolvidos pela empresa, um portfólio.
+
+###ENGLISH: 
+The beginning section has the purpose of presenting some projects developed by the company, a portfolio  
+
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
     <img src=https://media.giphy.com/media/eebjTk095O2XuB7wBt/giphy.gif>
