@@ -66,7 +66,7 @@ The "contacts" section serves to guide the user to all the company's means of co
 Algumas funcionalidades do site como a barra de navegação.
 
 ### [![Generic badge](https://img.shields.io/badge/-English-blue.svg)](https://shields.io/)  
-Some features of the site such as the navigation bar.
+Some website such as the navigation bar.
   
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
