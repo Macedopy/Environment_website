@@ -2,6 +2,13 @@
 
 ### Projeto pessoal de um site sobre meio ambiente
 
+<div>
+  <i class="fa-brands fa-html5"></i>
+  <a href="https://fontawesome.com/icons">
+    <img src="">
+</div>
+
+
 Login:
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
