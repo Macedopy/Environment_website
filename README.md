@@ -42,7 +42,7 @@ The "beginning" section has the purpose of presenting some projects developed by
 A seção "sobre" tem como objetivo mostrar ao usuário o objetivo da empresa e como ela atua.
 
 ### [![Generic badge](https://img.shields.io/badge/-English-blue.svg)](https://shields.io/)  
-The "about" section aims to show the user the purpose of the company and how it operates.
+The "about us" section aims to show the user the purpose of the company and how it operates.
   
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
