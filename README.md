@@ -30,7 +30,7 @@ The "login" section serves to register customers on our website.
 A seção de "início" tem a finalidade de apresentar alguns projetos desenvolvidos pela empresa, um portfólio.
 
 ### [![Generic badge](https://img.shields.io/badge/-English-blue.svg)](https://shields.io/) 
-The "beginning" section has the purpose of presenting some projects developed by the company, a portfolio  
+The "beginning" section has the purpose of presenting some projects developed by the company, a portfolio.
 
 <div>
   <a href="https://giphy.com/channel/Brumacedo">
